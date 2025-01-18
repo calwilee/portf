@@ -9,7 +9,7 @@
 <body>
     <nav>
         <a href = ../index.html>Home</a>
-        <a href = index.html>Contact</a>
+        <a class="current", href = index.html>Contact</a>
         <a href = ../projects/index.html>Projects</a>
         <a href="https://github.com/calwilee/" target = "blank">Github</a>
         <a href="../Calwin_Resume.pdf" target = "blank">Resume</a>
@@ -17,12 +17,11 @@
     <H1> Contact Informaton</H1>
     
     <form action = mailto:calwinlee@gmail.com method = POST enctype = text/plain>
-        <label for = em> email </label>
-        <input id = em name = "email" type = "email">
-        <label> subject <input name = "subject" > </label>
-        <label for = b> Body </label>
-        <textarea id = b name = "body"></textarea> 
-        <button type = submit> submit </button>
+        <label> Email <input id = em name = "email" type = "email"></label>
+        <label> Subject <input name = "subject" type = "text"> </label>
+        <label> Body <textarea id = b name = "body"></textarea> </label>
+        
+        <button type = submit> Send </button>
     </form>
     
 </body>
