@@ -12,10 +12,10 @@
 
 
 let pages = [
-    { url: '/portf/', title: 'Home', target: '' },
-    { url: '/portf/projects/', title: 'Projects', target: '' },
-    { url: '/portf/contact/', title: 'Contact', target: '' },
-    { url: '/portf/resume/', title: 'Resume', target: '' },
+    { url: '', title: 'Home', target: '' },
+    { url: 'projects/', title: 'Projects', target: '' },
+    { url: 'contact/', title: 'Contact', target: '' },
+    { url: 'resume/', title: 'Resume', target: '' },
     { url: 'https://github.com/calwilee/', title: 'Github', target: '_blank' },
     // add the rest of your pages here
   ];
