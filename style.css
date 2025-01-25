@@ -15,7 +15,7 @@ nav {
   margin-bottom: 1px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
   a{ 
     
     text-decoration: none;  
@@ -23,7 +23,7 @@ nav {
     padding: .5em;
     flex:1;
     &:hover{
-      background-color: oklch(from var(--color-accent) 95% 5% h);
+      background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
       border-bottom-width: 0.4em;
       border-bottom-style: solid;
       border-bottom-color: var(--color-accent);
@@ -77,6 +77,11 @@ form{
   
 }
 html{
+  
+  
+
+
+  color-scheme: light dark;
   --color-accent: #ADD8E6;
 }
 H1{
@@ -87,4 +92,17 @@ h1, h2, h3, h4, h5, h6
   line-height: 1.1;
   text-wrap: balance;
 
+}
+nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+  /* ... other styles and nested rules ... */
+}
+
+.color-scheme{
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+  font-family: inherit;
+  font-size: 80%;
+  font-weight: bold;
 }
