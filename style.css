@@ -61,6 +61,7 @@ form{
   
   
 }
+
 .projects{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -105,4 +106,109 @@ nav {
   font-family: inherit;
   font-size: 80%;
   font-weight: bold;
+}
+dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--big-space);
+}
+
+dl>div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-space);
+}
+
+dt {
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+dd {
+  font-size: 2.5em;
+  margin: 0;
+}
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+.pie-chart {
+  display: flex;
+  align-items: center;
+  gap: var(--big-space);
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+}
+
+.legend {
+  height: 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+  gap: 1em;
+  border: 1px black solid;
+  border-radius: var(--radius);
+  margin: 0;
+  padding: 1em;
+  flex: 1;
+
+}
+.searchBar {
+  margin-top: 1em;
+  width: 100%;
+}
+
+
+.legend li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+      opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+path.selected {
+  fill: oklch(60% 45% 0) !important;
+}
+
+.legend li.selected .swatch {
+  background-color: oklch(60% 45% 0) !important;
+}
+
+.container {
+  display: flex;
+  max-width: 80ch;
+
+  width: 100%;
+  padding: var(--space);
+}
+
+path {
+  transition: 300ms;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
 }
