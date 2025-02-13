@@ -15,6 +15,7 @@ let pages = [
     { url: '', title: 'Home', target: '' },
     { url: 'projects/', title: 'Projects', target: '' },
     { url: 'contact/', title: 'Contact', target: '' },
+    { url: 'meta/', title: 'Meta', target: '' },
     { url: 'resume/', title: 'Resume', target: '' },
     { url: 'https://github.com/calwilee/', title: 'Github', target: '_blank' },
     // add the rest of your pages here
