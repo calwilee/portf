@@ -1,3 +1,4 @@
+
 body {
     /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
@@ -248,13 +249,8 @@ circle {
   transform-origin: center;
   transform-box: fill-box;
 }
-dl.info {
-  /* ... other styles ... */
-  transition-duration: 500ms;
-  transition-property: opacity, visibility;
-}
 
-dl.info[hidden]:not(:hover, :focus-within) {
+dl.info[hidden]:not(:hover) {
   opacity: 0;
   visibility: hidden;
 }
@@ -266,3 +262,4 @@ circle:hover {
 circle.selected {
   fill: #ff6b6b;
 }
+

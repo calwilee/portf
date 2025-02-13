@@ -20,6 +20,7 @@ async function loadData() {
 document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
   createScatterplot();
+  updateTooltipVisibility(false);
   brushSelector();
 });
 
