@@ -21,9 +21,43 @@
         <a href="../resume/resume.html" >Resume</a>
     </nav> -->
     <H1 class = 'title'>Meta</H1>
-    <div id="stats"></div>
+    <div id = 'bar'>
+        
+        <label id = 'scroll'>
+            Show commits until
+            <input id="time-slider" type="range" min="0" max="100" value="-1" step="1">
+        </label>
+        
+    </div>
+    <div style="width: 100%; display:flex;">
+        <time id ='selectedTime'>12:00 PM</time>
+
+
+    </div>
+    <dl class="files">
+  <!-- we want the following structure for each file-->
+  <div>
+    <dt>
+      <code>{file.name}</code>
+    </dt>
+    <dd><div class="line"></div></dd>
+  </div>
+  <div>
+    ...
+  </div>
+</dl>
+
+
+
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="scrollytelling">
+      <div id="scroll-container">
+          <div id="spacer"></div>
+          <div id="items-container"></div>
+      </div>
+      <!-- our old scatterplot div -->
+      <div id="chart"></div>
+  </div>
     <dl id="commit-tooltip", class="info tooltip">
         <dt>Commit</dt>
         <dd>
